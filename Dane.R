@@ -96,7 +96,6 @@ tworzenie_tabelii <- function(nazwa_druzyna,nazwa_pilkarz){
     podania_pod_presja_na_wlasnej_polowie_udane <- 0
     podania_pod_presja_na_wlasnej_polowie_udane_procent <- 0
     procent_podan_pod_presja_do_wszystkich <- 0
-    procent_udnaych_podan_pod_presja_do_udanych_podan <- 0
     podania_do_przodu <- 0
     podania_do_przodu_pod_presja <- 0
     podania_w_strefe_F3_z_gry <- 0
@@ -175,7 +174,7 @@ tworzenie_tabelii <- function(nazwa_druzyna,nazwa_pilkarz){
   
   procent_podan_pod_presja_do_wszystkich <- (podania_pod_presja/podania)*100
   
-  procent_udnaych_podan_pod_presja_do_udanych_podan <- (podania_pod_presja_udane/podania_udane)*100
+  
   
   podania_do_przodu_frame <- pilkarz_tabela %>%
     filter(type.name == "Pass" & pass.angle > -1 & pass.angle < 1)
@@ -349,7 +348,6 @@ tworzenie_tabelii <- function(nazwa_druzyna,nazwa_pilkarz){
                       podania_pod_presja_na_wlasnej_polowie_udane, 
                       round(podania_pod_presja_na_wlasnej_polowie_udane_procent,digits=2),
                       round(procent_podan_pod_presja_do_wszystkich,digits=2),
-                      round(procent_udnaych_podan_pod_presja_do_udanych_podan,digits=2),
                       podania_do_przodu,
                       podania_do_przodu_pod_presja,
                       podania_w_strefe_F3_z_gry,
@@ -406,7 +404,6 @@ tworzenie_tabelii <- function(nazwa_druzyna,nazwa_pilkarz){
                    "Celne podania pod presją na własnej połowie",
                    "Procent celnych podań pod presją na własnej połowie (%)",
                    "Procent podan pod presją do wszystkich podań",
-                   "Procent udnaych podań pod presja do udanych podań (%)",
                    "Podania do przodu",
                    "Podania do przodu pod presja",
                    "Podania w strefę F3 z gry",
