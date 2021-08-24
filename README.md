@@ -53,7 +53,6 @@ Ocena będzie tworzona na postawie danego zawodnika z meczu. Istotnym aspektem b
 - Celne podania pod presją na własnej połowie
 - Procent celnych podań pod presją na własnej połowie (%)
 - Procent podan pod presją do wszystkich podań
-- Procent udnaych podań pod presja do udanych podań (%)
 - Podania do przodu
 - Podania do przodu pod presja
 - Podania w strefę F3 z gry
